@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(70, 142, 236);
+  font: normal 15pt Arial;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+header.texts {
+  color: white;
+}
+
+h2 {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  font-size: 15px;
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  width: 31.25rem;
+  margin: auto;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.363);
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.button,
+.copy-text {
+  width: 30rem;
+  padding: 0.75rem;
+  cursor: pointer;
+  border: none;
+  background-color: #3475e3;
+  color: white;
+  border-radius: 1rem;
+}
+
+.copy-text {
+  width: 5rem;
+  background-color: transparent;
+}
+
+#content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content #generatorNumbers {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+#content span {
+  display: inline-block;
+  margin: 6px;
+  color: white;
+  font-size: 22px;
+  background-color: #7044fd;
+  border-radius: 2rem;
+  padding: 10px;
+}
+
+@media (min-width: 300px) and (max-width: 768px) {
+  .container {
+    width: 16rem;
+  }
+}
