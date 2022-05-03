@@ -11,17 +11,23 @@ function generatorOfNumbers() {
   content.innerHTML += "<div id='generatorNumbers'></div>";
 
   let generator = document.querySelector("div#generatorNumbers");
-  for (let i = 0; i < 6; i++) {
+  let i = 0
+  while(i < 6) {
     let numberMin = Math.ceil(1);
     let numberMax = Math.ceil(60);
 
     var result =
       Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
-    numbers[i] = result;
 
-    generator.innerHTML += `<span class="teste-result">${
-      result < 10 ? "0" + result : result
-    } </span>`;
+    if(numbers.indexOf(result) == -1) {
+      numbers[i] = result;
+  
+      generator.innerHTML += `<span class="teste-result">${
+        result < 10 ? "0" + result : result
+      } </span>`;
+      i++
+    } 
+
   }
 
   content.innerHTML += `<button class="copy-text" onclick="copyText()"> <img src="./assets/copy.svg" /> </button>`;
